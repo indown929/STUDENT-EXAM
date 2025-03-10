@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #e6f1fa;  /* Light blue background inspired by PISA theme */
+}
+
+.container {      
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #003366; /* Dark blue text, giving a professional and academic look */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input, select, button {
+    padding: 10px;
+    font-size: 1em;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #007bff;  /* Blue button, in line with PISA's branding */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:disabled {
+    background-color: #ccc;
+}
+
+#submitExamBtn {
+    background-color: #0056b3; /* Slightly darker blue for the submit button */
+}
+
+#submitExamBtn:disabled {
+    background-color: #ccc;
+}
+
+#questions {
+    margin-top: 20px;
+}
+
+.question {
+    margin-bottom: 15px;
+}
+
+.options {
+    display: block;
+    margin: 10px 0;
+}
+
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+#downloadBtn, #backToSubjectsBtn {
+    background-color: #ff5733;  /* Orange button for download/back */
+    margin-top: 10px;
+}
+
+#backToSubjectsBtn {
+    background-color: #17a2b8; /* Blue button for back to subjects */
+}
+/* Example of a simple responsive design */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      font-size: 14px;
+    }
+    .container {
+      width: 100%;
+    }
+  }
+  

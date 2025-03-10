@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subject Exam Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>3rd QUARTER EXAM</h2>
+
+    <!-- Input Form -->
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="grade">Grade:</label>
+        <input type="text" id="grade" name="grade" required><br><br>
+
+        <label for="section">Section:</label>
+        <input type="text" id="section" name="section" required><br><br>
+
+        <label for="subject">Subject:</label>node server.js
+
+        <select id="subject" name="subject" required>
+            <option value="creative_technologies">Creative Technologies</option>
+            <option value="research">Research</option>
+            <option value="science">Science</option>
+            <option value="math">Math</option>
+            <option value="english">English</option>
+            <option value="social_studies">Social Studies</option>
+            <option value="mapeh">MAPEH</option>
+            <option value="filipino">Filipino</option>
+            <option value="history">History</option>
+            <option value="values">Values</option>
+            <option value="tle">TLE</option>
+        </select><br><br>
+
+        <label for="quarter">Quarter:</label>
+        <input type="text" id="quarter" name="quarter" required><br><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required><br><br>
+
+        <label for="teacher">Teacher:</label>
+        <input type="text" id="teacher" name="teacher" required><br><br>
+
+        <button type="button" id="startExamBtn">Start Exam</button>
+    </form>
+
+    <!-- Exam Section -->
+    <div id="examSection" style="display:none;">
+        <h3 id="subjectTitle"></h3>
+        <form id="examForm">
+            <div id="questions"></div>
+            <button type="submit" id="submitExamBtn">Submit Exam</button>
+        </form>
+
+        <div id="result" class="result" style="display:none;">
+            <p class="score">Total Score: <span id="totalScore"></span></p>
+            <ul id="resultList"></ul>
+            <button id="downloadBtn">Download Results</button>
+            <button id="backToSubjectsBtn">Back to Subjects</button>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+<link rel="manifest" href="/manifest.json">
